@@ -1,12 +1,12 @@
 /*========== Fonts ==========*/
 @font-face {
     font-family: Roboto;
-    src: url(../fonts/Roboto.ttf);
+    src: url(fonts/Roboto.ttf);
 }
 
 @font-face {
     font-family: "Space Grotesk";
-    src: url(../fonts/Space-Grotesk.ttf);
+    src: url(fonts/Space-Grotesk.ttf);
 }
 
 /*========== Universal Style ==========*/
