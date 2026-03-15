@@ -1,0 +1,86 @@
+:root {
+    --text-color: rgb(40, 25, 17);
+    --secondary-color: rgb(90, 57, 37);
+    --header-color: rgb(163, 103, 68);
+    --bg-color: beige;
+}
+
+/*==================================*/
+
+@font-face {
+    src: url("../../fonts/Nova-Round.ttf");
+    font-family: "Nova Round";
+}
+
+@font-face {
+    src: url("../../fonts/Roboto.ttf");
+    font-family: Roboto;
+}
+
+/*==================================*/
+
+html, body {
+    font-size: 120%;
+    background-color: var(--bg-color);
+    font-family: Roboto, sans-serif;
+    scroll-behavior:smooth;
+    text-align: justify;
+    margin-left: 3%;
+    margin-right: 3%;
+    color: var(--text-color);
+}
+
+header, footer {
+background-color: var(--header-color);
+border: 5px solid var(--secondary-color);
+border-radius: 10px;
+text-align: center;
+margin: 2%;
+padding: 1%;
+}
+
+.page-title {
+    font-size: 2.5rem;
+    font-family: "Nova Round", "Roboto", sans-serif;
+    color: var(--secondary-color);
+}
+
+/*==================================*/
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Nova Round", "Roboto", sans-serif;
+    text-align: center;
+}
+
+p {
+    hyphens: auto;
+}
+
+li {
+    padding-bottom: 1%;
+}
+
+li::marker {
+    font-weight: bold;
+}
+
+/*==================================*/
+
+a {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+ 
+a:hover {
+    text-decoration: underline wavy;
+}
+
+/*==================================*/
+
+hr {
+    height: 3px;
+    background-color: var(--secondary-color);
+    border: var(--secondary-color);
+    border-radius: 5px;
+    margin: 2%;
+}

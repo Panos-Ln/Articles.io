@@ -1,0 +1,414 @@
+/*========== Fonts ==========*/
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/Roboto.ttf);
+}
+
+@font-face {
+    font-family: "Space Grotesk";
+    src: url(../fonts/Space-Grotesk.ttf);
+}
+
+/*========== Universal Style ==========*/
+:root {
+    --bright-main-color: #f7f9e5;
+    --dark-main-color: #0f1212;
+    --page-side-margin: 3rem;
+    --page-top-margin: 2rem;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    min-height: 860px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: rgb(37, 37, 37);
+    background: linear-gradient(rgb(54, 47, 33), rgb(34, 49, 57));
+    padding: var(--page-top-margin) var(--page-side-margin);
+    align-items: center;
+    justify-content: center;
+    font-family: Roboto, sans-serif;
+}
+
+.horizontal {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/*========== Text ==========*/
+h2 {
+    color: var(--bright-main-color);
+    font-size: 2.5rem;
+    margin: 0;
+    text-align: center;
+}
+
+h2, .content-title, .main-content-title {
+    font-family: "Space Grotesk", Roboto, sans-serif;
+}
+
+.subtitle {
+    text-align: center;
+    hyphens: none;
+    color: var(--bright-main-color);
+    font-size: 1.3rem;
+}
+
+p {
+    text-align: justify;
+    hyphens: auto;
+    margin: 1rem auto;
+    max-width: 80%;
+    color: var(--bright-main-color);
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/*========== Normal Links ==========*/
+a {
+    color: var(--bright-main-color);
+    text-decoration: underline;
+}
+
+a:hover {
+    text-decoration: underline wavy;
+}
+
+/*========== Buttons ==========*/
+.user-profile, .social-button {
+    background: none;
+    border: none;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+    transition: background-color 0.05s;
+    flex-grow: 1;
+    text-decoration: none;
+}
+
+.user-profile:hover, .social-button:hover {
+    background-color: rgba(81, 81, 81, 0.5);
+    text-decoration: none;
+}
+
+a.button, a.button:visited {
+    color: var(--dark-main-color);
+    text-decoration: none;
+}
+
+.social-button {
+    justify-content: flex-start;
+    gap: 1rem;
+    text-align: left;
+    text-decoration: none;
+}
+
+.social-button > img {
+    width: 3.5rem;
+    border-radius: 10px;
+}
+
+p.social-button-name {
+    color: var(--bright-main-color);
+    font-size: 1.1rem;
+}
+
+/*========== Content boxes ==========*/
+.content-box-small, .content-box-mid, .content-box-big {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--bright-main-color);
+    border-radius: 40px;
+    color: var(--dark-main-color);
+    padding: 1rem;
+    margin: 0 auto;
+    filter: brightness(100%);
+    transform: scale(1);
+    transition: filter 0.2s; 
+    transition: transform 0.2s ease;
+}
+
+.content-box-small:hover, .content-box-mid:hover, .content-box-big:hover, .submit:hover {
+    transform: scale(1.05);
+    filter: brightness(90%);
+}
+
+.content-title {
+    font-size: 1rem;
+    font-weight: bold
+}
+
+.main-content-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.content {
+    margin: 1rem;
+    font-size: 1rem;
+    text-align: justify;
+    hyphens: auto;
+}
+
+.content::after, .main-content::after {
+    content: "...see more";
+    font-weight: lighter;
+}
+
+.content-img {
+    width: 18vw;
+    min-width: 8rem;
+    border: solid 2px var(--dark-main-color);
+    border-radius: 20px;
+    
+}
+
+.img-group {
+    display: flex;
+    gap: 3vw;
+    align-items: center;
+}
+
+/*========== Header ==========*/
+header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: calc(-1 * var(--page-side-margin));
+    margin-right: calc(-1 * var(--page-side-margin));
+    margin-top: calc(-1 * var(--page-top-margin));
+    width: 100%;
+    gap: 1rem;
+}
+
+.logo {
+    padding: 2rem;
+    flex-grow: 1;
+}
+
+.user-img {
+    width: 5rem;
+}
+
+.user-name, .head-text {
+    font-family: "Space Grotesk", Roboto, sans-serif;
+    font-weight: bold;
+    color: var(--bright-main-color);
+    font-size: 2rem;
+}
+
+.head-text {
+    padding: 1rem 4rem;
+}
+
+/*========== Footer ==========*/
+footer {
+    color: var(--bright-main-color);
+    text-align: center;
+}
+
+/*========== First Page ==========*/
+.first-view {
+    margin: 0 auto;
+    width: 80vw;
+    display: grid;
+    grid-template-rows: repeat(4, minmax(190px, 1fr));
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+    gap: 2rem;
+}
+
+.content-box-small.one {
+    grid-column: 1 / 2 ;
+    grid-row: 1 / 2;
+}
+
+.content-box-small.two {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2 ;
+}
+
+.content-box-small.three {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+.content-box-small.four {
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+}
+
+.content-box-mid.one {
+    grid-column: 3 / 4 ;
+    grid-row: 1 / 3;
+}
+
+.content-box-mid.two {
+    grid-column: 1 / 2;
+    grid-row: 2 / 4;
+}
+
+.content-box-mid > .content-img {
+    max-width: 18rem;
+}
+
+.content-box-big {
+    grid-column: 2 / 4;
+    grid-row: 3 / 5;
+}
+
+/*========== Featured Page ==========*/
+.featured {
+    margin: 0 auto;
+    padding: 0;
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.featured > .content-box-small {
+    flex-basis: 20vw;
+}
+
+/*========== Separators ==========*/
+hr {
+    width: 80vw;
+    height: 3px; 
+    border: solid 1px var(--bright-main-color);
+    border-radius: 100px;
+    background-color: var(--bright-main-color);
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+/*========== Newsletter Page ==========*/
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 1rem;
+    width: 20vw;
+    min-width: 15rem;
+    gap: 1rem;
+    border: solid 5px var(--bright-main-color);
+    border-radius: 20px;
+}
+
+input {
+    display: block;
+}
+
+.submit {
+    width: 40%;
+    height: 40px;
+    margin: 0 auto;
+    background-color: var(--bright-main-color);
+    border: none;
+    border-radius: 10px;
+    transform: scale(1);
+    filter: brightness(100%);
+    transition: transform 0.2s ease, filter 0.2s;
+}
+
+.confirmation-field {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.checkbox {
+    min-width: 30px;
+}
+
+.email {
+    width: 100%;
+    height: 40px;
+    margin: 0 auto;
+    background-color: var(--bright-main-color);
+    border: none;
+    border-radius: 10px;
+    padding: 4px;
+}
+
+/*========== Smaller Screen Compatibility ==========*/
+@media (max-width: 1200px) {
+    .head-text {
+        display: none;
+    }
+     .logo {
+        width: 50vw;
+    }
+    .user-img {
+        width: 8vw;
+    }
+    .user-name {
+        font-size: 4vw;
+    }
+}
+
+@media (max-width: 830px) {
+    .extra, .content-box-small:not(.featured > .content-box-small) {
+        display: none;
+    }
+    .content-box-mid, .content-box-big, .featured {
+        width: 75vw;
+    }
+    .content-box-small {
+        flex-grow: 1;
+    }
+    .first-view {
+        display: flex;
+        flex-direction: column;
+    }
+    .mobile-only {
+        display: block;
+    }
+    body {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 720px) {
+    header {
+        flex-direction: column;
+        gap: 0;
+        margin: 0 auto;
+    }
+    .logo {
+        margin: 0 auto;
+        width: 75vw;
+        padding-bottom: 0;
+    }
+    .content {
+        text-align: center;
+        hyphens: none;
+    }
+}
+
+@media (max-width: 400px) {
+    .featured {
+        flex-direction: column;
+    }
+    .social-button > img {
+    width: 2rem;
+    border-radius: 5px;
+    }
+    .mobile-only {
+    display: none;
+    }
+}
+
