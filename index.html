@@ -1,6 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta http-equiv="refresh" content="0; url=homepage/index.html">
-</head>
+    <head>
+        <!--Basics-->
+        <title>Articles.io</title>
+        <link rel="stylesheet" href="style.css">
+        <!--Metadata-->
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!--Icons-->
+            <link rel="icon" href="icons/favicon.ico" sizes="any">
+            <link rel="icon" href="icons/favicon-16x16.png" sizes="16x16">
+            <link rel="icon" href="icons/favicon-32x32.png" sizes="32x32">
+            <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+            <link rel="manifest" href="icons/site.webmanifest">
+   </head>
+   <body>
+        <header>
+            <img src="homepage-media/logo.png" alt="Articles.io Logo" class="logo">
+            <div class="head-text">The best place to learn about anything you want!</div>
+            <button class="user-profile"><img src="homepage-media/user-img.png" alt="User Image" class="user-img"><span class="user-name">User</span></button>
+        </header>
+        <hr>
+        <main>
+            <!--The first thing the visitor sees, displaying the most important news-->
+            <section class="first-view">
+                <div class="content-box-small one">
+                    <div class="content-title">New advance in technology</div>
+                    <div class="content">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </div>
+                </div>
+                <div class="content-box-small two">
+                    <div class="content-title">See the latest scores</div>
+                    <div class="content">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit asih ejet.
+                    </div>
+                </div>
+                <div class="content-box-small three">
+                    <div class="content-title">Prices rising again</div>
+                    <div class="content">
+                        Lorem ipsum dolor sit  ipsum dolor sit amet.
+                    </div>
+                </div>
+                <div class="content-box-small four">
+                    <div class="content-title">Where will the next Olympics be</div>
+                    <div class="content">
+                        Lorem ipsum dolor sit amet consectetur   dolor consectetur adipisicing.
+                    </div>
+                </div>
+                <div class="content-box-mid one">
+                    <div class="content-title">War started on Middle East</div>
+                    <div class="content">
+                        Lorem ipsum dolor sit amet consectetur adipisicing<span class="extra"> Dolor consectetur adipisicing consectetur adipisicing   dolor consectetur adipisicing.</span>
+                    </div>
+                    <img class="content-img" src="homepage-media/map.webp" alt="A map of Middle East">
+                </div>
+                <div class="content-box-mid two">
+                    <div class="content-title">Latest progress on cure for cancer
+                    </div>
+                    <div class="content">
+                        Lorem ipsum dolor sit amet consectetur adipisicing.<span class="extra"> Dolor consectetur adipisicing consectetur adipisicing   dolor consectetur adipisicing.</span>
+                    </div>
+                    <img class="content-img" src="homepage-media/cure.webp" alt="A scientist researching a cure.">
+                </div>
+                <div class="content-box-big">
+                    <div class="main-content-title">Programming courses available
+
+                    </div>
+                    <div class="content">
+                        Lorem ipsum dolor sit amet consectetur adipisicing   dolor consectetur adipisicing consectetur. <span class="extra"> Dolor consectetur adipisicing consectetur adipisicing   dolor consectetur adipisicing.</span>
+                    </div>
+                    <div class="img-group">
+                        <img class="content-img" src="homepage-media/js.webp" alt="A screen with a JavaScript script.">
+                        <img class="content-img extra" src="homepage-media/css.webp" alt="A screen with a CSS script.">
+                    </div>
+                </div>
+            </section>
+            <hr>
+            <!--The best articles of the page, basically the only ones that have their own page-->
+            <section id="featured">
+                <h2>Featured Articles</h2>
+                <p class="subtitle">Some articles that ranked first among our visitors:</p>
+                <ol class="featured">
+                    <li class="content-box-small"><a class="button" href="pages/cannes/index.html">
+                        <div class="content-title">Cannes: The Hollywood of Europe</div>
+                        <div class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit.<span class="extra"> Provident nemo necessitatibus illo asperiores. Repellat mollitia debitis dolores a nam ducimus?</span></div>
+                        <img class="content-img" src="homepage-media/cannes.webp" alt="The flag of Cannes">
+                    </a></li>
+                    <li class="content-box-small"><a class="button" href="pages/coconuts/index.html">
+                        <div class="content-title">Coconuts: A wonderful plant</div>    
+                        <div class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit.<span class="extra"> Provident nemo necessitatibus illo asperiores. Repellat mollitia debitis dolores a nam ducimus?</span></div>
+                        <img class="content-img" src="homepage-media/coconuts.webp" alt="A picture of 2 Coconuts">
+                    </a></li>
+                    <li class="content-box-small extra">
+                        <div class="main-content-title">Coming Soon!</div></li>
+                    <li class="content-box-small extra">
+                        <div class="main-content-title">Coming Soon!</div>
+                    </li>
+                </ol>
+                <p class="subtitle mobile-only">More Coming Soon!</p>
+            </section>
+            <hr>
+            <!--A section about the sites history, goals etc-->
+            <section id="about">
+                <h2>About Us</h2>
+                <p class="subtitle">Some stuff about this site:</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae aperiam sunt, magnam iste commodi sed quis saepe nostrum nisi quidem, libero sint, quasi quod iure pariatur tempore porro! Reiciendis, corporis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia in nam iste labore debitis quam cum soluta placeat, eaque consequatur, obcaecati expedita id amet ipsam sapiente temporibus praesentium? Dolor, similique. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat harum aliquid minus, similique doloribus hic repellendus sit vel reprehenderit deleniti, eveniet id dolores ipsam illum molestiae, rem aspernatur deserunt. Culpa.</p>
+            </section>
+            <hr>
+            <!--A newsletter form-->
+            <section id="newsletter">
+                <h2>Our Newsletter</h2>
+                <p class="subtitle">Subscribe to receive all news available before everyone else!</p>
+                <form action="" method="post" name="newsletter-form">
+                    <input class="email" type="email" name="email" placeholder="Enter your email..." required>      
+                    <div class="confirmation-field">
+                        <input class="checkbox" type="checkbox" name="confirmation" required>
+                        <p>I confirm that I am over 18 and I agree to the Rules and Requirements of the website.</p>
+                    </div>
+                    <input class="submit" type="submit" value="Send">
+                </form>
+            </section>
+            <hr>
+            <!--Links to all of the site's social media-->
+            <section id="social">
+                <h2>Our Social</h2>
+                <p class="subtitle">Find the latest news on any platform!</p>
+                <div class="horizontal">
+                    <div>
+                        <a href="https://www.youtube.com" class="social-button">
+                            <img src="homepage-media/youtube.png" alt="Youtube Logo">
+                            <p class="social-button-name">Youtube</p>
+                        </a>
+                        <a href="https://www.facebook.com" class="social-button">
+                            <img src="homepage-media/facebook.png" alt="Facebook Logo">
+                            <p class="social-button-name">Facebook</p>
+                        </a>
+                        <a href="https://www.twitter.com" class="social-button">
+                            <img src="homepage-media/twitter.png" alt="Twitter Logo">
+                            <p class="social-button-name">Twitter</p>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.tiktok.com" class="social-button">
+                            <img src="homepage-media/tiktok.png" alt="Tiktok Logo">
+                            <p class="social-button-name">Tiktok</p>
+                        </a>
+                        <a href="https://www.instagram.com" class="social-button">
+                            <img src="homepage-media/instagram.png" alt="Instagram Logo">
+                            <p class="social-button-name">Instagram</p>
+                        </a>
+                        <a href="https://www.reddit.com" class="social-button">
+                            <img src="homepage-media/reddit.png" alt="Reddit Logo">
+                            <p class="social-button-name">Reddit</p>
+                        </a>
+                    </div>
+                </div>  
+            </section>
+        </main>
+        <hr>
+        <footer>
+            Thanks for visiting this site!<br>
+            Author: Panos<br>
+            Contact us: <a href="mailto:panos@fake.com">panos@fake.com</a>
+        </footer>
+   </body>
 </html>
