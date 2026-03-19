@@ -345,6 +345,10 @@ input {
 }
 
 /*========== Smaller Screen Compatibility ==========*/
+.mobile-only {
+    display: none;
+    }
+
 @media (max-width: 1200px) {
     .head-text {
         display: none;
@@ -374,6 +378,9 @@ input {
         display: flex;
         flex-direction: column;
     }
+    .content-box-mid > .content-title {
+        font-size: 1.5rem;
+    }
     .mobile-only {
         display: block;
     }
@@ -399,16 +406,16 @@ input {
     }
 }
 
-@media (max-width: 400px) {
-    .featured {
+@media (max-width: 600px) {
+        .featured {
         flex-direction: column;
     }
+}
+
+@media (max-width: 400px) {
     .social-button > img {
     width: 2rem;
     border-radius: 5px;
-    }
-    .mobile-only {
-    display: none;
     }
 }
 

@@ -8,12 +8,12 @@
 /*==================================*/
 
 @font-face {
-    src: url("../../fonts/Nova-Round.ttf");
+    src: url(../../fonts/Nova-Round.ttf);
     font-family: "Nova Round";
 }
 
 @font-face {
-    src: url("../../fonts/Roboto.ttf");
+    src: url(../../fonts/Roboto.ttf);
     font-family: Roboto;
 }
 

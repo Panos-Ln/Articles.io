@@ -1,0 +1,275 @@
+/*========== Fonts ==========*/
+@font-face {
+    font-family: Roboto;
+    src: url(../../fonts/Roboto.ttf);
+}
+
+@font-face {
+    font-family: "Nova Round";
+    src: url(../../fonts/Nova-Round.ttf);
+}
+
+/*========== Universal Style ==========*/
+:root {
+    --text-color: rgb(25,25,25);
+    --default-font: Roboto, sans-serif;
+    --title-font: "Nova Round", Roboto, sans-serif;
+    --header-color: rgb(255, 215, 0);
+}
+
+*, *::before, * ::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth; 
+    background-image: url(images/background.png);
+    background-position: center;
+}
+
+body {
+    margin: 3% 5%;
+    padding: 3% 6%;
+    background-color: rgba(235, 235, 235, 0.9);
+    border-radius: 50px;
+    color: var(--text-color);
+}
+
+section {
+    scroll-margin-top: 2rem;
+}
+
+.horizontal, .vertical {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.vertical {
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/*========== Basic Text ==========*/
+p, li {
+    font-family: var(--default-font);
+    font-size: 1.2rem;
+    line-height: 1.4;
+}
+
+p {
+    text-align: justify;
+    hyphens: auto;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+.subtitle {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+#redirect {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#visitors > * > * > *, #media , #media > * > * {
+    text-align: center;
+}
+
+
+/*========== Header ==========*/
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw;
+    border: 5px solid var(--text-color);
+    border-radius: 20px;
+    padding: 1% 2%;
+    margin: 0 auto;
+    width: fit-content;
+    background-color: var(--header-color);
+}
+.head-text, .head-title, h2, h3, #redirect {
+    font-family: var(--title-font);
+    text-align: center;
+}
+
+
+.head-title {
+    width: fit-content;
+    font-size: 3rem;
+}
+
+.head-text {
+    width: fit-content;
+    font-size: 2rem;
+}
+
+header, footer {
+    border: 5px solid var(--text-color);
+    border-radius: 20px;
+    padding: 1% 2%;
+    margin: 0 auto;
+    width: fit-content;
+    background-color: var(--header-color);
+}
+
+footer {
+    font-family: var(--title-font);
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+/*========== Separators ==========*/
+hr {
+    height: 2px;
+    border-radius: 10px;
+    border: var(--text-color);
+    background-color: var(--text-color);
+    margin: 2rem;
+}
+
+/*========== Images ==========*/
+img {
+    width: 15vw;
+    border-radius: 30px;
+    border: 3px solid var(--text-color);
+    transform: scale(1);
+    box-shadow: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+img:hover {
+    transform: scale(1.1);
+    box-shadow: 2px 2px 2px var(--text-color);
+}
+
+.fullwidth {
+    width: 50vw;
+    border: 5px solid var(--text-color);
+}
+
+.fullwidth:hover {
+    transform: scale(1);
+}
+
+/*========== Lists ==========*/
+.visitor-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 2rem;
+    padding: 0;
+}
+
+li::marker {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 20vw;
+}
+
+ul {
+    margin: 0 auto;
+    width: 50vw;
+    border: 5px solid var(--text-color);
+    border-radius: 30px;
+    padding: 2%;
+}
+
+ul > li {
+    margin-bottom: 0.5rem;
+}
+
+/*========== Yt Videos ==========*/
+iframe {
+    width: 20vw;
+    height: 12rem;
+    border-radius: 20px;
+    border: 3px solid var(--text-color);
+}
+
+/*========== Links ==========*/
+a:not(.nolink) {
+    color: blue;
+}
+
+a.nolink {
+    color: var(--text-color);
+}
+
+a.nolink:hover {
+    color: var(--text-color);
+}
+
+a {
+    font-family: var(--title-font);
+    line-height: 1.4;
+    text-decoration: underline solid;
+}
+
+a:hover {
+    text-decoration: underline wavy;
+    color: blue;
+}
+
+/*========== Screen Size Compatibility ==========*/
+@media (max-width: 1150px) {
+    .horizontal {
+        flex-direction: column;
+    }
+    img{
+        width: 30vw;
+    }
+    .fullwidth {
+        width: 70vw;
+    }
+    iframe {
+        width: 50vw;
+        height: 10rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .visitor-list {
+        flex-direction: column;
+    }
+    img {
+        width: 70vw;
+    }
+    iframe {
+        height: 8rem;
+    }
+    ul {
+        width: 80vw;
+    }
+}
+
+@media (max-width:1000px){
+    header {
+        gap: 2vw
+    }
+}
+
+@media (max-width:800px) {
+    header {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
