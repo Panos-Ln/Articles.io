@@ -74,6 +74,10 @@ p {
     line-height: 1.5;
 }
 
+.paragraph {
+    font-size: 1.2rem;
+}
+
 /*========== Normal Links ==========*/
 a {
     color: var(--bright-main-color);
@@ -144,7 +148,7 @@ p.social-button-name {
 }
 
 .content-box-small:hover, .content-box-mid:hover, .content-box-big:hover, .submit:hover {
-    transform: scale(1.05);
+    transform: scale(1.02);
     filter: brightness(90%);
 }
 
@@ -303,7 +307,7 @@ form {
     margin: 0 auto;
     padding: 1rem;
     width: 20vw;
-    min-width: 15rem;
+    min-width: 17rem;
     gap: 1rem;
     border: solid 5px var(--bright-main-color);
     border-radius: 20px;
